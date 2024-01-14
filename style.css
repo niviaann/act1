@@ -1,0 +1,52 @@
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url("bg1.jpg");
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins', 'sans-serif,';
+    text-align: center;
+    
+} 
+
+h1 {
+    font-size: 45px;
+    margin-top: 1px;
+}
+
+/* all about hover */
+
+nav {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: pink;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 10px;
+    margin: 0px;
+    position: relative;
+} 
+
+nav a:hover {
+    color: white;
+}  
+
+nav a::before {
+    content:'';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: pink;
+    transition: all 0.3s;
+}  
+
+nav a:hover::before {
+    width: 100%;
+} 
+
+/* border */ 
+
+p.dotted {border-style:dotted}
